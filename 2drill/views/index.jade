@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{model.title}
+  p this is a meanjs test on 7/27/2014 by Monico
+
+  ul 
+    each doc in model.docs
+      li #{doc.fname}
